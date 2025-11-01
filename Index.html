@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Abdel</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-menu-wrapper">
+            <button class="header-menu-btn" id="header-menu-btn">
+                <span>☰ Menú</span>
+            </button>
+            <div class="header-dropdown-menu" id="header-dropdown-menu">
+                <div class="menu-item" data-window="carta">
+                    <img src="Assets/CartaPresentacion.png" alt="Carta" class="menu-icon">
+                    <span data-i18n="carta-label">Carta Presentación</span>
+                </div>
+                <div class="menu-item" data-window="formacion">
+                    <img src="Assets/Formacion.png" alt="Formación" class="menu-icon">
+                    <span data-i18n="formacion-label">Formación</span>
+                </div>
+                <div class="menu-item" data-window="proyectos">
+                    <img src="Assets/dev_to_icon_130961.png" alt="Proyectos" class="menu-icon">
+                    <span data-i18n="proyectos-label">Proyectos</span>
+                </div>
+                <div class="menu-item" data-window="contacto">
+                    <img src="Assets/Contacto.png" alt="Contacto" class="menu-icon">
+                    <span data-i18n="contacto-label">Contacto</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-controls">
+            <button class="control-btn theme-toggle" id="theme-toggle" title="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+        <h1 class="header-title" data-i18n="title">Abderrahman Belaziz</h1>
+        <p class="header-subtitle" data-i18n="subtitle">Desarrollador multiplataforma</p>
+    </header>
+
+    <div class="desktop">
+        <!-- Logo Windows XP en el centro -->
+        <div class="desktop-logo">
+            <img src="Assets/WinXp.svg" alt="Windows XP Logo" class="winxp-logo">
+        </div>
+
+        <!-- Iconos de aplicaciones -->
+        <div class="icon-container">
+            <div class="desktop-icon" data-window="carta">
+                <img src="Assets/CartaPresentacion.png" alt="Carta de Presentación" class="icon-image">
+                <span class="icon-label" data-i18n="carta-label">Carta Presentación</span>
+            </div>
+            <div class="desktop-icon" data-window="formacion">
+                <img src="Assets/Formacion.png" alt="Formación" class="icon-image">
+                <span class="icon-label" data-i18n="formacion-label">Formación</span>
+            </div>
+            <div class="desktop-icon" data-window="proyectos">
+                <img src="Assets/dev_to_icon_130961.png" alt="Proyectos" class="icon-image">
+                <span class="icon-label" data-i18n="proyectos-label">Proyectos</span>
+            </div>
+            <div class="desktop-icon" data-window="contacto">
+                <img src="Assets/Contacto.png" alt="Contacto" class="icon-image">
+                <span class="icon-label" data-i18n="contacto-label">Contacto</span>
+            </div>
+        </div>
+
+        <!-- Ventanas -->
+        <div class="window" id="window-carta" style="display: none;">
+            <div class="window-titlebar">
+                <span class="window-title" data-i18n="carta-title">Carta de Presentación</span>
+                <button class="window-close" data-close="carta">×</button>
+            </div>
+            <div class="window-content">
+                <div class="content-section">
+                    <div class="logo-section">
+                        <img src="Assets/CartaPresentacion.png" alt="Carta" class="content-logo">
+                    </div>
+                    <h2 data-i18n="carta-greeting">¡Hola!</h2>
+                    <p data-i18n="carta-intro">Soy <strong>Abderrahman Belaziz</strong>, puedes llamarme <strong>Abdel</strong>.</p>
+                    <p data-i18n="carta-description" class="text-paragraph">Soy un estudiante de Formación Profesional de Grado Superior en Desarrollo de Aplicaciones Multiplataforma. Siempre he sentido curiosidad por la programación y el desarrollo de aplicaciones, por lo que decidí enfocar todos mis esfuerzos en las mismas.</p>
+                    <p data-i18n="carta-skills" class="text-paragraph">Me pongo en contacto con ustedes con el fin de poder realizar mis prácticas de formación profesional en su empresa, y así poder conocer a su equipo, poder aprender de él y aportar todo lo posible al mismo.</p>
+                    <p data-i18n="carta-experience" class="text-paragraph">Es cierto que no cuento con la experiencia de un profesional, pero he tenido un recorrido por el mercado laboral que me ha aportado muchas cualidades y habilidades que considero valiosas, como la manera correcta de tratar con el cliente, ventas, lidiar con conflictos con compañeros y más habilidades que os contaré en la entrevista.</p>
+                    <p class="carta-signature" data-i18n="carta-closing">Muchas gracias, y que tengáis un excelente día.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="window-formacion" style="display: none;">
+            <div class="window-titlebar">
+                <span class="window-title" data-i18n="formacion-title">Formación</span>
+                <button class="window-close" data-close="formacion">×</button>
+            </div>
+            <div class="window-content">
+                <div class="content-section">
+                    <div class="logo-section">
+                        <img src="Assets/Formacion.png" alt="Formación" class="content-logo">
+                    </div>
+                    
+                    <div class="education-item">
+                        <h3 data-i18n="formacion-titulo1">🎓 Formación Académica</h3>
+                        <div class="education-entry">
+                            <p><strong data-i18n="formacion-carrera1">G.S. Desarrollo de Aplicaciones Multiplataforma</strong></p>
+                            <p data-i18n="formacion-instituto1">IES Doctor Balmis | Alicante, España</p>
+                            <p class="date-range" data-i18n="formacion-fecha1">2024 - 2026</p>
+                        </div>
+                        <div class="education-entry">
+                            <p><strong data-i18n="formacion-carrera2">Bachillerato Científico</strong></p>
+                            <p data-i18n="formacion-instituto2">IES Virgen Del Remedio | Alicante, España</p>
+                            <p class="date-range" data-i18n="formacion-fecha2">2022 - 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <h3 data-i18n="formacion-experiencia">💼 Experiencia Laboral</h3>
+                        <div class="experience-entry">
+                            <p><strong data-i18n="formacion-empresa">Sara Mobiles Shop</strong></p>
+                            <p data-i18n="formacion-cargo">Atención al cliente y ventas</p>
+                            <p class="date-range" data-i18n="formacion-fecha-exp">2021 – ACTUALIDAD</p>
+                            <ul class="job-duties">
+                                <li data-i18n="formacion-duties1">• Atención directa a clientes</li>
+                                <li data-i18n="formacion-duties2">• Venta de teléfonos móviles y accesorios</li>
+                                <li data-i18n="formacion-duties3">• Resolución de incidencias</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <h3 data-i18n="formacion-idiomas">🌍 Idiomas</h3>
+                        <div class="languages-grid">
+                            <div class="language-item">
+                                <span class="language-name" data-i18n="idioma-espanol">Español:</span>
+                                <span class="language-level" data-i18n="idioma-nativo">Nativo</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name" data-i18n="idioma-ingles">Inglés:</span>
+                                <span class="language-level" data-i18n="idioma-profesional">Profesional</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name" data-i18n="idioma-arabe">Árabe:</span>
+                                <span class="language-level" data-i18n="idioma-nativo2">Nativo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="window-proyectos" style="display: none;">
+            <div class="window-titlebar">
+                <span class="window-title" data-i18n="proyectos-title">Proyectos</span>
+                <button class="window-close" data-close="proyectos">×</button>
+            </div>
+            <div class="window-content">
+                <div class="content-section">
+                    <div class="logo-section">
+                        <img src="Assets/dev_to_icon_130961.png" alt="Proyectos" class="content-logo">
+                    </div>
+                    
+                    <div class="technologies-section">
+                        <h3 data-i18n="proyecto-tecnologias">💻 Tecnologías</h3>
+                        <div class="tech-category">
+                            <h4 data-i18n="proyecto-frontend">Frontend & Móvil</h4>
+                            <div class="skills-grid">
+                                <span class="skill-tag">Android Studio</span>
+                                <span class="skill-tag">
+                                    <img src="Assets/file_type_kotlin_icon_130487.png" alt="Kotlin" class="tech-icon"> Kotlin
+                                </span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">DOM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4 data-i18n="proyecto-desktop">Escritorio</h4>
+                            <div class="skills-grid">
+                                <span class="skill-tag">
+                                    <img src="Assets/Visual_Studio_23517.png" alt="Visual Studio" class="tech-icon"> Visual Studio
+                                </span>
+                                <span class="skill-tag">
+                                    <img src="Assets/c_sharp_icon_213045.png" alt="C#" class="tech-icon"> C#
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4 data-i18n="proyecto-backend">Backend</h4>
+                            <div class="skills-grid">
+                                <span class="skill-tag">
+                                    <img src="Assets/java_original_logo_icon_146458.png" alt="Java" class="tech-icon"> Java
+                                </span>
+                                <span class="skill-tag">APIs REST</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">
+                                    <img src="Assets/mysql_workbench_macos_bigsur_icon_189924.png" alt="MySQL Workbench" class="tech-icon"> MySQL Workbench
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tech-category">
+                            <h4 data-i18n="proyecto-gestion">Gestión de Proyectos</h4>
+                            <div class="skills-grid">
+                                <span class="skill-tag">Scrum</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-folder-section">
+                        <div class="folder-item">
+                            <h3 data-i18n="proyecto-folder">📁 Proyectos</h3>
+                            <p class="project-note" data-i18n="proyecto-proximamente">Próximamente...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="window-contacto" style="display: none;">
+            <div class="window-titlebar">
+                <span class="window-title" data-i18n="contacto-title">Contacto</span>
+                <button class="window-close" data-close="contacto">×</button>
+            </div>
+            <div class="window-content">
+                <div class="content-section">
+                    <div class="logo-section">
+                        <img src="Assets/Contacto.png" alt="Contacto" class="content-logo">
+                    </div>
+                    <h2 data-i18n="contacto-titulo">📧 Contacto</h2>
+                    <p data-i18n="contacto-descripcion">Estoy siempre abierto a nuevas oportunidades, colaboraciones o simplemente a conocer a otros desarrolladores. No dudes en contactarme.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <img src="Assets/Email_30017.png" alt="Email" class="contact-icon">
+                                <strong data-i18n="contacto-email-label">Email:</strong>
+                            </div>
+                            <a href="mailto:alexanderkalashnicovx@gmail.com" data-i18n="contacto-email">alexanderkalashnicovx@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon-wrapper">
+                                <img src="Assets/phone_blue_35145.png" alt="Teléfono" class="contact-icon">
+                                <strong data-i18n="contacto-telefono-label">Teléfono:</strong>
+                            </div>
+                            <a href="tel:+34602364375" data-i18n="contacto-telefono">602 364 375</a>
+                        </div>
+                    </div>
+
+                    <p class="contact-closing" data-i18n="contacto-cierre">¡Espero tu mensaje! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de tareas estilo Windows XP -->
+    <footer class="taskbar">
+        <button class="start-button">
+            <span class="start-text">Inicio</span>
+        </button>
+        <div class="taskbar-apps" id="taskbar-apps">
+            <!-- Los botones de aplicaciones abiertas se añadirán aquí dinámicamente -->
+        </div>
+        <div class="system-tray">
+            <div class="tray-item wifi-icon" title="WiFi">
+                <span class="wifi-symbol">📶</span>
+            </div>
+            <div class="tray-item language-toggle-taskbar" id="language-toggle" title="Cambiar idioma">
+                <span class="language-icon-taskbar">ES</span>
+            </div>
+            <div class="tray-item clock-item">
+                <span class="tray-time" id="clock">
+                    <span id="clock-time">00:00</span>
+                    <span id="clock-date" class="tray-date">00/00/0000</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
